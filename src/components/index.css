@@ -1,0 +1,156 @@
+/* -------------------------
+   Basic reset + box model
+   ------------------------- */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: black;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
+  font-size: 1rem; /* 16px */
+}
+
+/* Utility */
+.container { max-width: var(--container-max); margin: 0 auto; padding: 0 1rem; }
+
+/* Accessibility helper */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
+
+/* -------------------------
+   Header / Navbar
+   ------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6), transparent);
+  padding: 0.75rem 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  justify-content: space-between;
+}
+.logo {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.125rem;
+}
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; align-items: center; }
+.nav a {
+  color: var(--muted); text-decoration: none; font-weight: 600; padding: 0.25rem 0.5rem;
+}
+.actions .btn-signin {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* -------------------------
+   Hero (Landing)
+   ------------------------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+.hero-inner {
+  max-width: 720px;
+}
+.hero-title { font-size: 2rem; margin: 0 0 .5rem 0; }
+.hero-sub { color: var(--muted); margin: 0 0 1rem 0; max-width: 60ch; }
+.hero-ctas { display: flex; gap: .75rem; align-items: center; flex-wrap: wrap; }
+.hero-visual {
+  height: 220px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.4));
+  border-radius: var(--radius);
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-outline { background: rgba(255,255,255,0.06); color: #fff; }
+
+.btn:focus { outline: 3px solid rgba(229,9,20,0.18); outline-offset: 2px; }
+
+/* -------------------------
+   Features (grid)
+   ------------------------- */
+.features { padding: 2rem 0; }
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.feature-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.2));
+  padding: 1rem;
+  border-radius: 10px;
+}
+.feature-card h3 { margin: 0 0 .5rem 0; }
+.feature-card p { margin: 0; color: var(--muted); }
+
+/* -------------------------
+   Netflix-style rows
+   ------------------------- */
+.row { margin-top: 2rem; padding-bottom: 0.5rem; }
+.row-title { margin: 0 0 .5rem 0; font-size: 1.125rem; }
+.row-items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(140px, 1fr);
+  gap: .75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: .5rem;
+}
+.row-items > .card { scroll-snap-align: start; }
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: .5rem;
+  min-width: 140px;
+}
+.card-thumb { height: 120px; border-radius: 8px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.2)); }
+.card-title { margin-top: .5rem; font-size: .9rem; color: var(--muted); }
+
+/* -------------------------
+   Footer
+   ------------------------- */
+.site-footer { padding: 2rem 0; color: var(--muted); }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; }
+.footer-links { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+
+/* -------------------------
+   Responsive tweaks
+   ------------------------- */
+@media (min-width: 768px){
+  .hero { grid-template-columns: 1fr 420px; }
+  .hero-title { font-size: 2.4rem; }
+  .row-items { grid-auto-columns: minmax(180px, 1fr); }
+  .nav a { color: #fff; }
+}
+@media (min-width: 1024px){
+  .container { padding: 0 2rem; }
+  .hero { padding: 4rem 0; }
+}
