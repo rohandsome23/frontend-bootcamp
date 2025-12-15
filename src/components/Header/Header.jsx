@@ -12,6 +12,7 @@ export default function Header() {
             <li><a href="#tv">TV Shows</a></li>
             <li><a href="#movies">Movies</a></li>
             <li><a href="#mylist">My List</a></li>
+            <li><a href="#choice">My choice</a></li>
           </ol>
         </nav>
 
