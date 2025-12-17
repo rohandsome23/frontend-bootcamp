@@ -9,12 +9,12 @@ export default function App() {
   return (
     <div className="app-root">
       <Header />
-      <main>
+      {/* <main>
         <Hero />
         <Features />
         <NetflixHome />
       </main>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

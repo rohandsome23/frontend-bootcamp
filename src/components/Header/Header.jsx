@@ -3,23 +3,36 @@ import './header.css'
 
 export default function Header() {
   return (
-    <header className="header" role="banner">
-      <div className="container header-inner">
-        <div className="logo" tabIndex="0">MyStream</div>
-        <nav className="nav" aria-label="Main navigation">
-          <ol>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tv">TV Shows</a></li>
-            <li><a href="#movies">Movies</a></li>
-            <li><a href="#mylist">My List</a></li>
-            <li><a href="#choice">My choice</a></li>
-          </ol>
-        </nav>
+    <header class="header">
+      <div class="header-left">
+        <h3>My Stream</h3>
+        {/* <h2>demo</h2>
+        <h4>demo 2 </h4> */}
+      </div>
+      <div class="mid">
+        <h4>Home</h4>
+        <h4>About us </h4>
+        <h4>Contact us</h4>
+        <h4>Search</h4>
+      </div>
+      <div class="last">
+         <button>Login</button>
+         <button>Sign up</button>
 
-        <div className="actions">
-          <button className="btn btn-signin">Sign In</button>
-        </div>
       </div>
     </header>
+    // <header className="header" role="banner">
+    //   <div className="container header-inner">
+    //     <div className="logo" tabIndex="0">MyStream</div>
+    //     <nav className="nav" aria-label="Main navigation">
+    //       <ol>
+            
+    //       </ol>
+    //     </nav>
+    //     <div className="actions">
+    //       <button className="btn btn-signin">Sign In</button>
+    //     </div>
+    //   </div>
+    // </header>
   );
 }
