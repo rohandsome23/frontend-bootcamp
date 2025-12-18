@@ -3,15 +3,29 @@ import './header.css'
 
 export default function Header() {
   return (
-    <header class="header">
-      <div class="header-left">
-        <h3>My Stream</h3>
+    <header class="navbar">
+      <div class="logo">NETFLIX
+      {/* <h1> NETFLIX</h1> */}
         {/* <h2>demo</h2>
         <h4>demo 2 </h4> */}
       </div>
-      <div class="mid">
+      <div class="navlink">
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">TV shows</a>
+        <a href="#">Movies</a>
+        <a href="#">latest</a>
+        <a href="#">My list</a>
+        </nav>
+        </div>
+        <div class="button">
+        <button>Sign In</button>
+        <button>Log In</button>
+        </div>
+        
+      {/* <div class="mid">
         <h4>Home</h4>
-        <h4>About us </h4>
+        <h4></h4>
         <h4>Contact us</h4>
         <h4>Search</h4>
       </div>
@@ -19,7 +33,7 @@ export default function Header() {
          <button>Login</button>
          <button>Sign up</button>
 
-      </div>
+      </div> */}
     </header>
     // <header className="header" role="banner">
     //   <div className="container header-inner">
