@@ -14,7 +14,7 @@ body{
 .hero{
     height: 100vh;
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), 
-                url("https://i.imgur.com/8nKQeFj.jpg") center/cover no repeat;
+                url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWUlMjBwb3N0ZXJ8ZW58MHx8MHx8fDA%3D") center/cover no repeat;
     display:flex;
     align-items: center;
     justify-content: center;

@@ -3,50 +3,34 @@ import './header.css'
 
 export default function Header() {
   return (
-    <header class="navbar">
-      <div class="logo">NETFLIX
-      {/* <h1> NETFLIX</h1> */}
-        {/* <h2>demo</h2>
-        <h4>demo 2 </h4> */}
+    <header className="navbar ">
+      <div className="logo">NETFLIX
       </div>
-      <div class="navlink">
-        <nav>
+      <div className="navlink">
+        
         <a href="#">Home</a>
         <a href="#">TV shows</a>
         <a href="#">Movies</a>
         <a href="#">latest</a>
         <a href="#">My list</a>
-        </nav>
+        
         </div>
-        <div class="button">
+        <div className="right">
         <button>Sign In</button>
         <button>Log In</button>
         </div>
-        
-      {/* <div class="mid">
-        <h4>Home</h4>
-        <h4></h4>
-        <h4>Contact us</h4>
-        <h4>Search</h4>
-      </div>
-      <div class="last">
-         <button>Login</button>
-         <button>Sign up</button>
-
-      </div> */}
     </header>
-    // <header className="header" role="banner">
-    //   <div className="container header-inner">
-    //     <div className="logo" tabIndex="0">MyStream</div>
-    //     <nav className="nav" aria-label="Main navigation">
-    //       <ol>
-            
-    //       </ol>
-    //     </nav>
-    //     <div className="actions">
-    //       <button className="btn btn-signin">Sign In</button>
-    //     </div>
-    //   </div>
-    // </header>
+    
   );
 }
+// .navbar{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 20px 40px;
+//     position: fixed;
+//     width: 100%;
+//     background: rgba(red, green, blue, alpha);
+//     z-index: 100;
+
+// }

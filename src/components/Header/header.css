@@ -79,15 +79,36 @@ body{
     font-weight: bold;
 }
 .navlink {
-    margin: 0 12px;
+
+    height: 40px;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+    
 }
-.button{
-    background: #e50914;
+a:hover{
+    color: aqua;
+} 
+
+.right{
+    display:flex;
+    gap: 20px;
     border: none;
     padding: 8px 16px;
     color: #fff;
+    
+}
+.right button{
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+.right button:hover{
+    color: #e50914;
     cursor: pointer;
 }
