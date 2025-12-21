@@ -3,7 +3,7 @@ import "./hero.css"
 export default function Hero() {
   return (
     <section className="hero">
-      <div calss="hero-content">
+      <div className="hero-content">
         <h1>Unlimited movies, TV shows and more. </h1>
         <h2>Watch anywhere. Cancel anytime.</h2>
         <p>Ready to watch? Enter your email to create or restart your membership.</p>

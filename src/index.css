@@ -14,3 +14,32 @@
       background-color: #000;
       color: #fff;
   }
+
+  .rows {
+    margin-top: 60px;
+    }
+    
+    .rows h3{
+      margin: 20px 0 10px;
+      font-size: 22px;
+    
+    }
+    .row{
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+    }
+    
+    .card{
+      min-width: 200px;
+      height: 300px;
+      background-color: #222;
+      border-radius: 8px;
+      transition: transform 0.3s ease box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover{
+      transform: scale(1.08);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    
+    }

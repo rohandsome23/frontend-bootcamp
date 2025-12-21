@@ -12,17 +12,19 @@ body{
 } */
 
 .hero{
-    height: 100vh;
+    height: 150vh;
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), 
                 url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWUlMjBwb3N0ZXJ8ZW58MHx8MHx8fDA%3D") center/cover no repeat;
     display:flex;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .hero-content {
-  max-width: 700px;
+  max-width: 1000px;
+  
 }
 
 .hero h1 {
@@ -42,7 +44,9 @@ body{
 
 .hero-form {
   display: flex;
+  gap: 10px;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .hero-form input {
@@ -59,3 +63,31 @@ body{
   font-size: 16px;
   cursor: pointer;
 }
+/* .rows {
+margin-top: 60px;
+}
+
+.rows h3{
+  margin: 20px 0 10px;
+  font-size: 22px;
+
+}
+.row{
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.card{
+  min-width: 200px;
+  height: 300px;
+  background-color: #222;
+  border-radius: 8px;
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card:hover{
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+
+} */
